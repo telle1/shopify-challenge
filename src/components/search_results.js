@@ -31,15 +31,15 @@ function SearchResults({ movie, nominations, setNominations }) {
 
   return (
     <React.Fragment>
-      <div className='test'>
-        <div className='test-image'>
+      <div className='result-wrapper'>
+        <div className='result-image'>
           <img src={movie.Poster} alt='Movie'></img>
         </div>
-        <div className='test-descript'>
+        <div className='result-descript'>
           <p>{movie.Title}</p>
           <p>{movie.Year}</p>
         </div>
-        <div className='test-btn'>
+        <div className='result-btn'>
           <button
             disabled={buttonClicked}
             onClick={() => handleNominate(movie)}

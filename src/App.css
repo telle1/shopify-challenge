@@ -8,7 +8,6 @@ button{
   border-radius: 5px; 
   padding: 12px;
   color: white;
-  margin-top: 5px;
   cursor: pointer;
 }
 
@@ -16,23 +15,12 @@ button:hover{
   background-color: #12a3ff;
 }
 
-.search-movie, .test, .nominations{
+.search-movie, .result-wrapper, .nominations{
   border:1px solid #cecece;
   border-radius: 5px;
   padding: 1vw;
-
 }
 
-
-.test-1{
-  width: 100%;
-}
-
-input[type="text"]{
-  width: 94%;
-  padding: 10px;
-  max-width: 94%;
-}
 
 /*Results/Nominations*/
 .results_and_nom{
@@ -45,32 +33,26 @@ input[type="text"]{
   width: 30%;
 }
 
-.test-wrapper{
-  width: 60%;
-}
-
-.test{
+.result-wrapper{
   margin-bottom: 25px;
   padding: 15px;
-  width: 100%;
   display: flex
 }
 
-.test-image{
+.result-image{
   width: 20%;
 }
 
-.test-descript{
+.result-descript{
   width: 60%;
 }
 
-.test-btn{
+.result-btn{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20%;
 }
-
 
 
 .results_and_nom img {
@@ -109,9 +91,18 @@ input[type="text"]{
   }
   .nominations{
     margin: 2% 0;
-    width: 100%;
+    width: 93%;
   }
   .results_and_nom{
     flex-direction: column-reverse;
+  }
+  .nominations img{
+    width: 20%;
+  }
+  .search-movie, .test, .nominations{
+    padding: 3vw;
+  }
+  button, input[type="text"]{
+    margin-top: 2%;
   }
 }

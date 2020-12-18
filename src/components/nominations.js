@@ -1,7 +1,7 @@
 function Nominations({nomination, setNominations, nominations}){
 
     const handleRemove = (nom) => {    
-        const rmvNom = nominations.filter(movie => movie != nom)
+        const rmvNom = nominations.filter(movie => movie !== nom)
         setNominations(rmvNom)
     }
 

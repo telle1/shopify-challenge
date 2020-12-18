@@ -1,3 +1,6 @@
+import React from 'react';
+import './search.css'
+
 function Search({movieTitle, setMovieTitle, setMovieInfo}){
 
     const API_KEY = process.env.REACT_APP_API_KEY 
@@ -18,7 +21,7 @@ function Search({movieTitle, setMovieTitle, setMovieInfo}){
         <label htmlFor='movie-title'>Movie title</label>
         <br />
         <form onSubmit={handleMovie}>
-          <div className='test-1'>
+          <div className='search-box'>
             <button type='submit'>
               <i className='fa fa-search'></i>
             </button>
