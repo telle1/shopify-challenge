@@ -13,10 +13,21 @@ function SearchResults({ movie, nominations, setNominations }) {
 
   const handleNominate = (movie) => {
     setNominations([...nominations, movie]);
+    localStorage.setItem('nominations', JSON.stringify([...nominations, movie]));
   };
 
   const disableButton = () => {
-    if (nominations.includes(movie)){
+
+    /*This prevents re-nominating a movie already in nominations from local storage*/
+    const checkID = () => {
+        for (let nom of nominations){
+            if (movie.imdbID === nom.imdbID){
+                return true
+            }
+        }
+    }
+
+    if (nominations.includes(movie) || checkID()){
         setButtonClicked(true);
         setButtonColor('gray');
         setCursor('auto');

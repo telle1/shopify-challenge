@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SearchResults from './components/search_results'
 import Nominations from './components/nominations'
 import Search from './components/search'
@@ -12,6 +12,15 @@ function App() {
 
   console.log(movieInfo, 'movieinfo');
   console.log(nominations, 'nominations')
+
+  useEffect(() => {
+    const noms = localStorage.getItem('nominations')    
+    if (noms){
+      const saveNoms = JSON.parse(noms);
+      setNominations(saveNoms) 
+    }
+    
+  }, [])
 
   return (
     <div className='App'>
