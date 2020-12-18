@@ -91,11 +91,16 @@ input[type="text"]{
 
 .nomination{
   display: flex;
-  align-items: start;
+  align-items: flex-start;
+  padding: 2% 0;
 }
 
 .nomination-info{
   margin: 0 3%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  height: 150px;
 }
 
 @media (max-width: 800px) {
