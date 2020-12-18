@@ -1,0 +1,91 @@
+body {
+  padding: 100px;
+}
+
+button{
+  background-color: #59bfff;
+  border: none;
+  border-radius: 5px; 
+  padding: 12px;
+  color: white;
+  margin-top: 5px;
+}
+
+.search-movie, .test, .nominations{
+  border:1px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+
+}
+
+/* button{
+  max-width: 4%;
+} */
+
+.test-1{
+  width: 100%;
+}
+
+input[type="text"]{
+  width: 94%;
+  padding: 10px;
+  max-width: 94%;
+}
+
+/*Results/Nominations*/
+.results_and_nom{
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nominations{
+  width: 30%;
+}
+
+.test-wrapper{
+  width: 60%;
+}
+
+.test{
+  margin-bottom: 25px;
+  padding: 15px;
+  width: 100%;
+  display: flex
+}
+
+.test-image{
+  width: 20%;
+}
+
+.test-descript{
+  width: 60%;
+}
+
+.test-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.results_and_nom img {
+  width: 90%;
+  height: 150px;
+  display: inline;
+}
+
+h5{
+  margin: 0px;
+}
+
+
+
+@media (max-width: 800px) {
+  .test-wrapper{
+    width: 100%;
+  }
+  .results_and_nom{
+    flex-direction: column;
+  }
+}
