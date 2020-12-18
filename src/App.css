@@ -1,5 +1,5 @@
 body {
-  padding: 100px;
+  padding: 5vw;
 }
 
 button{
@@ -9,18 +9,20 @@ button{
   padding: 12px;
   color: white;
   margin-top: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #12a3ff;
 }
 
 .search-movie, .test, .nominations{
-  border:1px solid gray;
+  border:1px solid #cecece;
   border-radius: 5px;
-  padding: 15px;
+  padding: 1vw;
 
 }
 
-/* button{
-  max-width: 4%;
-} */
 
 .test-1{
   width: 100%;
@@ -69,23 +71,42 @@ input[type="text"]{
   width: 20%;
 }
 
+
+
 .results_and_nom img {
   width: 90%;
   height: 150px;
-  display: inline;
 }
 
-h5{
+.nom-message{
+  background-color: #59bfff;
+  color: white;
   margin: 0px;
+  padding: 3%;
 }
 
+.nominations img {
+  width: 33%;
+}
 
+.nomination{
+  display: flex;
+  align-items: start;
+}
+
+.nomination-info{
+  margin: 0 3%;
+}
 
 @media (max-width: 800px) {
   .test-wrapper{
     width: 100%;
   }
+  .nominations{
+    margin: 2% 0;
+    width: 100%;
+  }
   .results_and_nom{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
