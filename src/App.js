@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
+import SearchResults from './components/search_results'
 
 
 
@@ -9,7 +10,6 @@ function App() {
   const [movieTitle, setMovieTitle] = useState('');
   const [movieInfo, setMovieInfo] = useState([]);
   const [nominations, setNominations] = useState([]);
-  const [button, setButton] = useState(false)
 
   console.log(movieInfo, 'movieinfo');
   console.log(nominations, 'nominations')
@@ -20,18 +20,9 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        // console.log(data.Search[0].Title)
-        // data.Search.map(obj => setMovieInfo({...movieInfo, obj}))
         setMovieInfo(data.Search);
-        // setMovieInfo({title: data.Search[0].Title, year: data.Search[0].Year, poster: data.Search[0].Poster})
       })
       .catch((err) => console.log(err));
-  };
-
-  const handleNominate = (movie) => {
-    setNominations([...nominations, movie])
-    // setButton(true) //disabling all buttons
-    // console.log('movie', movie)
   };
 
   return (
@@ -60,18 +51,9 @@ function App() {
       <div className='results_and_nom'>
         <div className='test-wrapper'>
           {movieInfo ? movieInfo.map(movie => (
-            <div className='test'>
-              <div className='test-image'>
-                <img src={movie.Poster} alt='Movie'></img>
-              </div>
-              <div className='test-descript'>
-                <p>{movie.Title}</p>
-                <p>{movie.Year}</p>
-              </div>
-              <div className='test-btn'>
-                <button disabled={button} onClick={() => handleNominate(movie)}>Nominate</button>
-              </div>
-            </div>
+            <React.Fragment>
+              <SearchResults movie={movie} setNominations={setNominations} nominations={nominations}/>
+            </React.Fragment>
           )) : <p>No Results</p> }
         </div>
 
