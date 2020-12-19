@@ -1,0 +1,19 @@
+button,
+input[type='text'] {
+  margin-top: 10px;
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 5px;
+}

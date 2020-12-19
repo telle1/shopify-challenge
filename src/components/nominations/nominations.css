@@ -1,0 +1,17 @@
+.nom-message{
+    background-color: #59bfff;
+    color: white;
+    padding: 3%;
+  }
+
+@media (max-width: 800px) {
+  .results_and_nom{
+    flex-direction: column-reverse;
+  }
+  .results-outer-wrapper, .nominations-outer-wrapper{
+    width: 100%;
+  }
+  .search-movie{
+    padding: 3vw;
+  }
+}

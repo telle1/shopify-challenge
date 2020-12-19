@@ -1,0 +1,48 @@
+/*Results and Nominations*/
+.results_and_nom {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.results-outer-wrapper,
+.nominations-outer-wrapper {
+  width: 49%;
+}
+
+.result-inner-wrapper,
+.nomination-inner-wrapper {
+  margin-bottom: 25px;
+  padding: 15px;
+  display: flex;
+}
+
+.result-image,
+.nomination-image {
+  width: 20%;
+}
+
+.result-descript,
+.nomination-descript {
+  width: 60%;
+}
+
+.result-btn,
+.nomination-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.results_and_nom img,
+.nomination-image img {
+  width: 90%;
+  height: 150px;
+}
+
+.result-descript p,
+.nomination-descript p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
