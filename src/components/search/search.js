@@ -5,7 +5,7 @@ function Search({ movieTitle, setMovieTitle, setMovieInfo }) {
   
   const [errorMsg, setErrorMsg] = useState();
 
-  const API_KEY = process.env.REACT_APP_API_KEY;
+  const API_KEY = process.env.REACT_APP_API_KEY 
 
   const handleMovie = (e) => {
     e.preventDefault();
