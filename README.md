@@ -13,5 +13,5 @@ Throughout this process, I have gained a much better understanding of flexbox an
 
 
 
-![ShoppiesPreview](./shoppies_preview.png)
+![ShoppiesPreview](./Shoppies_preview.png)
 
