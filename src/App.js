@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import SearchResults from './components/search_results';
-import Nominations from './components/nominations';
-import Search from './components/search';
+import SearchResults from './components/search_results/search_results';
+import Nominations from './components/nominations/nominations';
+import Search from './components/search/search';
 
 function App() {
   const [movieTitle, setMovieTitle] = useState('');
@@ -48,10 +48,10 @@ function App() {
           )}
         </div>
         <div className='nominations-outer-wrapper'>
+          <h2>Nominations</h2>
           {nominations.length === 5 ? (
             <p class='nom-message'>You reached 5 nominations!</p>
           ) : null}
-          <h2>Nominations</h2>
           <div>
             {nominations.map((nomination) => (
               <Nominations
