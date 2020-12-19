@@ -42,13 +42,14 @@ function SearchResults({ movie, nominations, setNominations }) {
 
   return (
     <React.Fragment>
-      <div className='result-wrapper'>
+      <div className='result-inner-wrapper'>
         <div className='result-image'>
           <img src={movie.Poster} alt='Movie'></img>
         </div>
         <div className='result-descript'>
-          <p>{movie.Title}</p>
-          <p>{movie.Year}</p>
+          {movie.Title}
+          <br/>
+          ({movie.Year})
         </div>
         <div className='result-btn'>
           <button

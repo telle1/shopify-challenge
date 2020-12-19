@@ -13,7 +13,7 @@ function Search({movieTitle, setMovieTitle, setMovieInfo}){
             console.log(data);
             setMovieInfo(data.Search);
           })
-          .catch((err) => console.log(err));
+          .catch((err) => console.log(err.message));
     };
 
     return (

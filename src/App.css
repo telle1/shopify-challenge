@@ -15,7 +15,7 @@ button:hover{
   background-color: #12a3ff;
 }
 
-.search-movie, .result-wrapper, .nominations{
+.search-movie, .result-inner-wrapper, .nomination-inner-wrapper{
   border:1px solid #cecece;
   border-radius: 5px;
   padding: 1vw;
@@ -23,41 +23,49 @@ button:hover{
 
 
 /*Results/Nominations*/
+h2{
+  margin-top: 0%;
+}
+
+
 .results_and_nom{
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
 }
 
-.nominations{
-  width: 30%;
+.results-outer-wrapper, .nominations-outer-wrapper{
+  width: 49%;
 }
 
-.result-wrapper{
+.result-inner-wrapper, .nomination-inner-wrapper{
   margin-bottom: 25px;
   padding: 15px;
   display: flex;
 }
 
-.result-image{
+.result-image, .nomination-image{
   width: 20%;
 }
 
-.result-descript{
+.result-descript, .nomination-descript{
   width: 60%;
 }
 
-.result-btn{
+.result-btn, .nomination-btn{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20%;
 }
 
-.results_and_nom img {
+.results_and_nom img, .nomination-image img {
   width: 90%;
   height: 150px;
 }
+
+/*Noms*/
+
 
 .nom-message{
   background-color: #59bfff;
@@ -66,39 +74,14 @@ button:hover{
   padding: 3%;
 }
 
-.nominations img {
-  width: 33%;
-}
-
-.nomination{
-  display: flex;
-  align-items: flex-start;
-  padding: 2% 0;
-}
-
-.nomination-info{
-  margin: 0 3%;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  height: 150px;
-}
-
 @media (max-width: 800px) {
-  .test-wrapper{
-    width: 100%;
-  }
-  .nominations{
-    margin: 2% 0;
-    width: 93%;
-  }
   .results_and_nom{
     flex-direction: column-reverse;
   }
-  .nominations img{
-    width: 20%;
+  .results-outer-wrapper, .nominations-outer-wrapper{
+    width: 100%;
   }
-  .search-movie, .test, .nominations{
+  .search-movie{
     padding: 3vw;
   }
   button, input[type="text"]{
