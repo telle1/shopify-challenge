@@ -10,7 +10,7 @@ function Search({ movieTitle, setMovieTitle, setMovieInfo }) {
   const handleMovie = (e) => {
     e.preventDefault();
     fetch(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${movieTitle}&type=movie`
+      `https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${movieTitle}&type=movie`
     )
       .then((res) => res.json())
       .then((data) => {
