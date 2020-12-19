@@ -9,9 +9,6 @@ function App() {
   const [movieInfo, setMovieInfo] = useState([]);
   const [nominations, setNominations] = useState([]);
 
-  console.log(movieInfo, 'movieinfo');
-  console.log(nominations, 'nominations');
-
   useEffect(() => {
     const noms = localStorage.getItem('nominations');
     if (noms) {
