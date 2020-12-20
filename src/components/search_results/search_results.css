@@ -46,3 +46,14 @@
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
+.result-year, .nomination-year{
+  padding-top: 6px;
+}
+
+.gold-line{
+  height: 2px;  
+  width: 15%;
+  background: url('../../gold2.png') no-repeat right top;
+
+}

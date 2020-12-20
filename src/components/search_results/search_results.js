@@ -51,7 +51,8 @@ function SearchResults({ movie, nominations, setNominations }) {
         </div>
         <div className='result-descript'>
           <p>{movie.Title}</p>
-          <p>({movie.Year})</p>
+          <div class="gold-line"></div>
+          <p class="result-year">({movie.Year})</p>
         </div>
         <div className='result-btn'>
           <button

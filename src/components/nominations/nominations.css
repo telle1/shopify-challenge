@@ -1,5 +1,7 @@
 .nom-message{
     background-color: #59bfff;
+    background: url('../../gold2.png') no-repeat right top;
+    opacity: 0.9;
     color: white;
     padding: 3%;
   }

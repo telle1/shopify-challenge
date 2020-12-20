@@ -16,7 +16,8 @@ function Nominations({ nomination, setNominations, nominations }) {
       <div className='nomination-descript'>
         <div>
           <p>{nomination.Title}</p>
-          <p>({nomination.Year})</p>
+          <div class="gold-line"></div>
+          <p class="nomination-year">({nomination.Year})</p>
         </div>
       </div>
       <div className='nomination-btn'>
