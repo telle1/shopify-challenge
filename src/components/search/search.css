@@ -24,8 +24,13 @@ input[type='text'] {
 
 label {
   font-weight: bold;
-  font-family: 'Cinzel', serif;
-  background: url('../../images/gold.png') no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 700px) {
+  .shopify-logo{
+    display: none;
+  }
+  .header h1{
+    text-align: center;
+  }
 }

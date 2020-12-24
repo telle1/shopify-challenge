@@ -1,9 +1,8 @@
 .nom-message{
-    background-color: #59bfff;
     background: url('../../images/gold2.png') no-repeat right top;
     opacity: 0.9;
     color: white;
-    padding: 3%;
+    padding: 15px;
   }
 
 .nomination-btn button{

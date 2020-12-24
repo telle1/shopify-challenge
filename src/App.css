@@ -27,7 +27,7 @@ button:disabled:hover{
   padding: 10px 1%;
 }
 
-h1, h2 {
+h1, h2, label {
   margin: 0px 0px 20px 0px;
   font-family: 'Cinzel', serif;
   background: url('./images/gold.png') no-repeat;
