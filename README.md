@@ -25,5 +25,13 @@ In addition to the requirements listed, I improved the design to include:
 to use plain CSS, and in doing so gained a much better understanding of flexbox and responsive design. 
 
 ### Preview 
+Full Screen View
+
 ![ShoppiesPreview](./src/images/shoppies_preview.png)
+
+Small Screen View
+
+![ShoppiesPreview](./src/images/shoppies_responsive.png)
+
+
 
