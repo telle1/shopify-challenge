@@ -2,16 +2,28 @@
 
 ## Hosted On: https://tiffanyluu-the-shoppies.netlify.app/
 
-### In addition to the requirements listed, I improved the design to include:
-* ### Movie poster
-* ### Saving nominations when the user refreshes the page
-* ### Improving the UI by adding color 
-* ### Displaying results and nominations as a separate component instead of as a list
+### Description
 
-I challenged myself to reduce my dependency on Bootstrap for styling, and instead chose to style with CSS only. 
-Throughout this process, I have gained a much better understanding of flexbox and responsive design. 
+Shopify is hosting its very own movie awards event, The Shoppies. They are decking out
+in all things gold and glamorous! Help Shopify give out golden Shoppies by browsing the site and
+nominating your favorite movies.
 
+### Technologies
+* React
+* HTML/CSS
 
+### Features
+In addition to the requirements listed, I improved the design to include:
+* Movie poster
+* Improving the UI by adding gold theme
+* Displaying results and nominations as a separate component instead of as a list
+* Local storage to save nominations after user leaves page
+* Ensuring responsive webdesign
 
-![ShoppiesPreview](./Shoppies_preview.png)
+### Challenges
+* Prior to The Shoppies, I had relied heavily on Bootstrap for styling. I decided to challenge myself
+to use plain CSS, and in doing so gained a much better understanding of flexbox and responsive design. 
+
+### Preview 
+![ShoppiesPreview](./src/images/shoppies_preview.png)
 
