@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import SearchResults from './components/search_results/search_results';
 import Nominations from './components/nominations/nominations';
 import Search from './components/search/search';
+import logo from './images/shoppies.png'
 
 function App() {
   const [movieTitle, setMovieTitle] = useState('');
@@ -19,7 +20,10 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>The Shoppies</h1>
+      <div className="header">
+        <img className="shopify-logo" src={logo} alt="Shopify Logo"></img>
+        <h1>The Shoppies</h1>
+      </div>
       <div className='search'>
         <Search
           movieTitle={movieTitle}
@@ -61,6 +65,7 @@ function App() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

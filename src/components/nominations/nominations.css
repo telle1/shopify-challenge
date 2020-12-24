@@ -1,10 +1,14 @@
 .nom-message{
     background-color: #59bfff;
-    background: url('../../gold2.png') no-repeat right top;
+    background: url('../../images/gold2.png') no-repeat right top;
     opacity: 0.9;
     color: white;
     padding: 3%;
   }
+
+.nomination-btn button{
+  background-color: #D2B461;
+}
 
 @media (max-width: 800px) {
   .results_and_nom{

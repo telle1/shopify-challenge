@@ -3,21 +3,20 @@ body {
 }
 
 button {
-  /* background-color: #59bfff; */
-  background: url('./gold2.png') no-repeat right top;
   border: none;
   border-radius: 5px;
   padding: 12px;
   color: white;
   cursor: pointer;
-  
-
+  outline: none;
 }
 
-button:hover {
-
+button:hover{
   transform: scale(1.1);
+}
 
+button:disabled:hover{
+  transform: scale(1);
 }
 
 .search-movie,
@@ -29,8 +28,9 @@ button:hover {
 }
 
 h1, h2 {
+  margin: 0px 0px 20px 0px;
   font-family: 'Cinzel', serif;
-  background: url('./gold.png') no-repeat;
+  background: url('./images/gold.png') no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -43,3 +43,26 @@ h1{
 h2{
   font-size: 40px;
 }
+
+.shopify-logo{
+  width: 100px;
+  height: 100px;
+}
+
+.header{
+  display: flex;
+}
+
+.App{
+  animation: fade-in 1s ease-in;
+}
+
+@keyframes fade-in{
+  from{ 
+    opacity: 0%;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+

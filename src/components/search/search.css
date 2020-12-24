@@ -3,6 +3,10 @@ input[type='text'] {
   margin-top: 10px;
 }
 
+.search-box button {
+  background-color: #D2B461;
+}
+
 .search-box {
   width: 100%;
   display: flex;
@@ -16,4 +20,12 @@ input[type='text'] {
 .error-msg {
   color: red;
   margin-top: 5px;
+}
+
+label {
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  background: url('../../images/gold.png') no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

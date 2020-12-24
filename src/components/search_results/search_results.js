@@ -32,12 +32,12 @@ function SearchResults({ movie, nominations, setNominations }) {
 
     if (nominations.includes(movie) || checkID()) {
       setButtonClicked(true);
-      setButtonColor('gray');
+      setButtonColor('#E0E0E0');
       setCursor('auto');
       setButtonText('Nominated');
     } else {
       setButtonClicked(false);
-      setButtonColor('#59bfff');
+      setButtonColor('#D2B461');
       setCursor('pointer');
       setButtonText('Nominate');
     }
